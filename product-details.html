@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <!---NAVBAR-->
+
+    <div class="container"> 
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> <img src="images/logo.png"  alt="Logo"> </a>
+            </div>
+          
+            <div class="nav">
+                <ul id="ulmenu">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="products.html">Products</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Contact</a></li>
+                    <li> <a href="account.html">Account</a></li>
+                </ul>
+            </div>
+            <a href="shopping_cart.html"><img src="images/supermarket.svg" class="cart" width="50px" height="30px" ></a>
+            <img src="images/menu-24px.svg" class="menu_icon" onclick="menutoggle()">
+        </div>
+        
+</div>
+    <!--Featured PRoducts-->
+
+    <div class="products">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Shorting</option>
+                <option>Sort by Sale</option>
+                <option>Sort by rating</option>
+                <option>Sort by size</option>
+                <option>Sort by sale</option>
+            </select>
+        </div>
+
+        <div class="container2 singleproduct">
+            <div class="row">
+                <div class="col-2-pd">
+                    <img src="images/shoes_details.jpg" width="100%" id="product_img">
+                
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="images/shoes.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/product2.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/product3.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="images/product4.jpg" width="100%" class="small-img">
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-2-pd">
+                    <p>Home/T-shirt</p>
+                    <h1>Red Printed  shoes by Nike</h1>
+                    <h4>$40.00</h4>
+                    <select>
+                        <option>Select Size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL<option>
+                    </select><br>
+                    <input type="number" value="1">
+                    <button class="btn">Add to cart</button>
+
+                    <h3>Product details</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque inventore beatae veniam, obcaecati eos odit? Veniam dolorum eos corporis, quisquam neque optio exercitationem ipsam explicabo quis, magnam doloremque quae sunt?0</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-2">
+            <h3>Related Products</h3>
+            <h3>View more</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="/images/product1.jpg">
+                <h4> Bridal Lehenga </h4>
+                <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+                </div>
+                <p> $50.00 </p>
+            </div>
+            <div class="col-4">
+                <img src="/images/product2.jpg">
+                <h4> OverBlazer </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p> $50.00 </p>
+            </div>
+            
+            <div class="col-4">
+                <img src="/images/product4.jpg">
+                <h4> Gym Equipments </h4>
+                <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                </div>
+                <p> $50.00 </p>
+            </div>
+            <div class="col-4">
+                <img src="/images/product5.jpg">
+                <h4> WFH Desk Setup </h4>
+                <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                </div>
+                <p> $50.00 </p>
+            </div>
+        </div>
+
+    </div>     
+    
+   
+        <!--Footer-->
+
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col-1">
+                        <h4>Download our App</h4>
+                        <img src="/images/play-store-logo.png">
+                        <img src="images/play-store-ios.png">
+                        <p>App for Android and iOS mobile phone.</p>
+                            
+                    </div>
+                    
+                    <div class="footer-col-2">
+                        <img src="images/logo.png">
+                        <p>Our goal is to sustainably make the experience of shopping better and accessible to many.</p>
+                    </div>
+                    
+                
+                    <div class="footer-col-3">
+                        <h3>Other Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Policies</li>
+                        <li>Influencer Programme</li>
+                    </ul>
+                    </div>
+                    
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                    </div>
+                </div>
+               
+            </div>
+            <hr>
+            <p class="copyright">Copyright-2020  <i class="fa fa-copyright" aria-hidden="true"></i></p>
+        </div>
+    </div>
+    </div>
+
+<!--Javascript-->
+
+    <script>
+        var MenuItems=document.getElementById("ulmenu");
+        MenuItems.style.maxHeight="0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px")
+                MenuItems.style.maxHeight="200px";   
+            else
+                MenuItems.style.maxHeight="0px" ;
+        }
+
+        var product_img=document.getElementById("product_img");
+        var small_img=document.getElementsByClassName("small-img");
+
+        small_img[0].onclick=function (){
+            product_img.src=small_img[0].src;
+        }
+
+        
+        small_img[1].onclick=function (){
+            product_img.src=small_img[1].src;
+        }
+
+        
+        small_img[2].onclick=function (){
+            product_img.src=small_img[2].src;
+        }
+
+        
+        small_img[3].onclick=function (){
+            product_img.src=small_img[3].src;
+        }
+    </script>
+</body>
+</html>
